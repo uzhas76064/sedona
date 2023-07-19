@@ -48,11 +48,13 @@ ul {
   margin: 0;
 }
 
+
+
 li {
   display: block;
 }
 
-p, h1, h2 {
+p, h1, h2, h3, h4, img {
   margin: 0;
   padding: 0;
 }
@@ -134,11 +136,6 @@ main {
 .main__intro {
   background: url("../images/main-background.png") no-repeat;
   background-size: cover;
-}
-
-.main__description {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .main__description-header {
@@ -319,7 +316,7 @@ main {
   background-size: cover;
 }
 
-.main__newsletter-heading {
+.main__newsletter-heading, .main__subscribe-heading {
   text-align: center;
   font-size: 30px;
   font-style: normal;
@@ -328,7 +325,7 @@ main {
   text-transform: uppercase;
 }
 
-.main__newsletter-description {
+.main__newsletter-description, .main__subscribe-description {
   text-align: center;
   font-size: 22px;
   font-style: normal;
@@ -336,23 +333,23 @@ main {
   line-height: 26px;
 }
 
-.main__newsletter-form {
+.main__newsletter-form, .main__subscribe-form {
   text-align: center;
 }
 
-.main__newsletter-input {
+.main__newsletter-input, .main__subscribe-input {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
 }
 
-.main__newsletter-input, .main__newsletter-button {
+.main__newsletter-input, .main__newsletter-button, .main__subscribe-button {
   padding-right: 19px;
   padding-left: 22px;
 }
 
-.main__newsletter-button {
+.main__newsletter-button,  .main__subscribe-button {
   text-align: center;
   font-size: 20px;
   font-style: normal;
@@ -412,11 +409,11 @@ main {
   line-height: normal;
   padding: 35px 72px 80px;
   background: url("../images/catalog-background.png") no-repeat;
+  margin-bottom: 50px;
 }
 
 .main__legend {
   font-size: 20px;
-  padding-bottom: 35px;
 }
 
 
@@ -432,25 +429,23 @@ main {
 }
 
 .main__form {
-  display: flex;
+  display: grid;
+  grid-template-columns: 200px 200px 1fr 223px;
+  gap: 18px;
 }
 
 .main__fieldset {
   padding: 0;
-  margin: 0 17px 0 0;
-  width: 200px;
 }
 
 .main__fieldset:nth-child(3) {
-  width: 287px;
-  margin-left: 95px;
+  margin-left: 96px;
 }
 
 .main__buttons {
   display: flex;
   flex-direction: column;
-  width: 160px;
-  margin-left: 64px;
+  margin-left: 80px;
 }
 
 .main__buttons > .main__button[type=submit] {
@@ -480,9 +475,10 @@ main {
 }
 
 .main__results {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 287px max-content;
+  margin-bottom: 53px;
+  gap: 81px;
 }
 
 .main__count {
@@ -490,11 +486,38 @@ main {
 }
 
 .main__hotels {
-  /*display: flex;*/
-  max-width: 1200px;
   padding: 0 72px;
-  margin: 0 auto;
-  flex-wrap: wrap;
+}
+
+.catalog-list {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  gap: 10px 18px;
+}
+
+.main__hotel-name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.main__hotel-info {
+  font-size: 18px;
+}
+
+.main__rating {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.main__hotel-actions {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.main__hotel-actions, .main__hotel-info, .main__rating {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main__hotel-button:first-child, .main__hotel-button:last-child {
@@ -508,6 +531,11 @@ main {
 }
 
 .main__hotel {
+  padding: 20px;
+}
+
+.main__image, .main__hotel-info, .main__hotel-actions, .main__hotel-name {
+  margin-bottom: 16px;
 }
 
 .main__hotel-button:first-child {
@@ -520,6 +548,7 @@ main {
 
 .main__pagination {
   padding: 30px 0;
+  grid-column: 1/-1;
 }
 
 .main__pagination-nav {
@@ -561,4 +590,21 @@ main {
 .main__pages {
   display: flex;
   margin-right: auto;
+}
+
+.main__subscribe-text {
+  padding: 94px 200px;
+}
+
+.main__subscribe-heading, .main__subscribe-description {
+  margin-bottom: 46px;
+}
+
+.main__subscribe-form {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+}
+
+.main__subscribe-button {
+  color: white;
 }

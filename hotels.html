@@ -57,40 +57,54 @@
         <fieldset class="main__fieldset">
           <legend class="main__legend">Инфраструктура:</legend>
 
-          <label for="swim" class="main__label">
-            <input checked type="checkbox" name="" id="swim" class="main__checkbox">
-            <span>Бассейн</span>
-          </label>
+          <ul>
+            <li>
+              <label for="swim" class="main__label">
+                <input checked type="checkbox" name="" id="swim" class="main__checkbox">
+                <span>Бассейн</span>
+              </label>
+            </li>
 
-          <label for="parking" class="main__label">
-            <input checked type="checkbox" name="" id="parking" class="main__checkbox">
-            <span>Парковка</span>
-          </label>
+            <li>
+              <label for="parking" class="main__label">
+                <input checked type="checkbox" name="" id="parking" class="main__checkbox">
+                <span>Парковка</span>
+              </label>
 
+            </li>
 
-          <label for="wifi" class="main__label">
-            <input type="checkbox" name="" id="wifi" class="main__checkbox">
-            <span>Wi-Fi</span>
-          </label>
+            <li>
+              <label for="wifi" class="main__label">
+                <input type="checkbox" name="" id="wifi" class="main__checkbox">
+                <span>Wi-Fi</span>
+              </label>
+            </li>
+          </ul>
+
         </fieldset>
 
         <fieldset class="main__fieldset">
           <legend class="main__legend">Тип жилья:</legend>
-          <label for="hotel" class="main__label">
-            <input checked type="radio" name="" id="hotel" class="main__radio">
-            <span>Гостиница</span>
-          </label>
-
-          <label for="motel" class="main__label">
-            <input type="radio" name="" id="motel" class="main__radio">
-            <span>Мотель</span>
-          </label>
-
-          <label for="apartments" class="main__label">
-            <input type="radio" name="" id="apartments" class="main__radio">
-            <span>Апартаменты</span>
-          </label>
-
+          <ul>
+            <li>
+              <label for="hotel" class="main__label">
+                <input checked type="radio" name="" id="hotel" class="main__radio">
+                <span>Гостиница</span>
+              </label>
+            </li>
+            <li>
+              <label for="motel" class="main__label">
+                <input type="radio" name="" id="motel" class="main__radio">
+                <span>Мотель</span>
+              </label>
+            </li>
+            <li>
+              <label for="apartments" class="main__label">
+                <input type="radio" name="" id="apartments" class="main__radio">
+                <span>Апартаменты</span>
+              </label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="main__fieldset">
@@ -115,94 +129,96 @@
 
   <section class="main__hotels">
 <!--    TODO Изменить блок результатов-->
-<!--    <div class="main__results ">-->
-<!--      <h2 class="main__count">Найдено гостиниц: 38</h2>-->
-<!--      <select class="main__select" name="" id="">-->
-<!--        <option>Сначала дешёвые</option>-->
-<!--      </select>-->
-<!--      <div class="main__navigation">-->
-<!--        <button class="main__page">1</button>-->
-<!--        <button class="main__page">2</button>-->
-<!--        <button class="main__page">3</button>-->
-<!--      </div>-->
-<!--    </div>-->
+    <div class="main__results ">
+      <h2 class="main__count">Найдено гостиниц: 38</h2>
+      <select class="main__select" name="" id="">
+        <option>Сначала дешёвые</option>
+      </select>
+      <div class="main__navigation">
+        <button class="main__page">1</button>
+        <button class="main__page">2</button>
+        <button class="main__page">3</button>
+      </div>
+    </div>
 
-    <div class="main__hotel">
-      <img class="main__image" src="./images/hotel-1.png" alt="">
-      <h3 class="main__hotel-name">Amara Resort & Spa</h3>
-      <div class="main__hotel-info">
-        <span class="main__hotel-type">Гостиница</span>
-        <span class="main__hotel-price">От 4000 ₽</span>
-      </div>
-      <div class="main__hotel-actions">
-        <button class="main__hotel-button">подробнее</button>
-        <button class="main__hotel-button">В избранное</button>
-      </div>
-      <div class="main__rating">
-        <div class="main__star">
-          <img src="images/stars4.png" alt="">
-        </div>
-        <div class="main__rating-value">
-          Рейтинг: 8,5
-        </div>
-      </div>
-    </div>
-    <div class="main__hotel">
-      <img class="main__image" src="./images/hotel-2.png" alt="">
-      <h3 class="main__hotel-name">Desert Quail Inn</h3>
-      <div class="main__hotel-info">
-        <span class="main__hotel-type">Гостиница</span>
-        <span class="main__hotel-price">От 3000 ₽</span>
-      </div>
-      <div class="main__hotel-actions">
-        <button class="main__hotel-button">подробнее</button>
-        <button class="main__hotel-button">В избранное</button>
-      </div>
-      <div class="main__rating">
-        <div class="main__star">
-          <img src="images/stars3.png" alt="">
-        </div>
-        <div class="main__rating-value">Рейтинг: 8,9</div>
-      </div>
-    </div>
-    <div class="main__hotel">
+   <div class="catalog-list">
+     <div class="main__hotel">
+       <img class="main__image" src="./images/hotel-1.png" alt="">
+       <h3 class="main__hotel-name">Amara Resort & Spa</h3>
+       <div class="main__hotel-info">
+         <span class="main__hotel-type">Гостиница</span>
+         <span class="main__hotel-price">От 4000 ₽</span>
+       </div>
+       <div class="main__hotel-actions">
+         <button class="main__hotel-button">подробнее</button>
+         <button class="main__hotel-button">В избранное</button>
+       </div>
+       <div class="main__rating">
+         <div class="main__star">
+           <img src="images/stars4.png" alt="">
+         </div>
+         <div class="main__rating-value">
+           Рейтинг: 8,5
+         </div>
+       </div>
+     </div>
+     <div class="main__hotel">
+       <img class="main__image" src="./images/hotel-2.png" alt="">
+       <h3 class="main__hotel-name">Desert Quail Inn</h3>
+       <div class="main__hotel-info">
+         <span class="main__hotel-type">Гостиница</span>
+         <span class="main__hotel-price">От 3000 ₽</span>
+       </div>
+       <div class="main__hotel-actions">
+         <button class="main__hotel-button">подробнее</button>
+         <button class="main__hotel-button">В избранное</button>
+       </div>
+       <div class="main__rating">
+         <div class="main__star">
+           <img src="images/stars3.png" alt="">
+         </div>
+         <div class="main__rating-value">Рейтинг: 8,9</div>
+       </div>
+     </div>
+     <div class="main__hotel">
 
-      <img class="main__image" src="./images/hotel-3.png" alt="">
-      <h3 class="main__hotel-name">Villas at Poco Diablo</h3>
-      <div class="main__hotel-info">
-        <span class="main__hotel-type">Гостиница</span>
-        <span class="main__hotel-price">От 2000 ₽</span>
-      </div>
-      <div class="main__hotel-actions">
-        <button class="main__hotel-button">подробнее</button>
-        <button class="main__hotel-button">В избранное</button>
-      </div>
-      <div class="main__rating">
-        <div class="main__star">
-          <img src="images/stars2.png" alt="">
-        </div>
-        <div class="main__rating-value">Рейтинг: 9,2</div>
-      </div>
-    </div>
-    <div class="main__hotel">
+       <img class="main__image" src="./images/hotel-3.png" alt="">
+       <h3 class="main__hotel-name">Villas at Poco Diablo</h3>
+       <div class="main__hotel-info">
+         <span class="main__hotel-type">Гостиница</span>
+         <span class="main__hotel-price">От 2000 ₽</span>
+       </div>
+       <div class="main__hotel-actions">
+         <button class="main__hotel-button">подробнее</button>
+         <button class="main__hotel-button">В избранное</button>
+       </div>
+       <div class="main__rating">
+         <div class="main__star">
+           <img src="images/stars2.png" alt="">
+         </div>
+         <div class="main__rating-value">Рейтинг: 9,2</div>
+       </div>
+     </div>
+     <div class="main__hotel">
 
-      <img class="main__image" src="./images/hotel-4.png" alt="">
-      <h3 class="main__hotel-name">GreenTree Inn</h3>
-      <div class="main__hotel-info">
-        <span class="main__hotel-type">Гостиница</span>
-        <span class="main__hotel-price">От 3000 ₽</span>
-      </div>
-      <div class="main__hotel-actions">
-        <button class="main__hotel-button ">подробнее</button>
-        <button class="main__hotel-button ">В избранное</button>
-      </div>
-      <div class="main__rating">
-        <div class="main__star">
-          <img src="images/stars2.png" alt="">
-        </div>
-        <div class="main__rating-value">Рейтинг: 9,2</div>
-      </div>
-    </div>
+       <img class="main__image" src="./images/hotel-4.png" alt="">
+       <h3 class="main__hotel-name">GreenTree Inn</h3>
+       <div class="main__hotel-info">
+         <span class="main__hotel-type">Гостиница</span>
+         <span class="main__hotel-price">От 3000 ₽</span>
+       </div>
+       <div class="main__hotel-actions">
+         <button class="main__hotel-button ">подробнее</button>
+         <button class="main__hotel-button ">В избранное</button>
+       </div>
+       <div class="main__rating">
+         <div class="main__star">
+           <img src="images/stars2.png" alt="">
+         </div>
+         <div class="main__rating-value">Рейтинг: 9,2</div>
+       </div>
+     </div>
+   </div>
     <div class="main__pagination">
       <button class="main__load-button">Загрузить ещё</button>
       <div class="main__pagination-nav">
@@ -237,14 +253,14 @@
     </div>
   </section>
 
-  <section class="main__newsletter">
-    <div class="main__newsletter-text white">
-      <h2 class="main__newsletter-heading">Подпишитесь на рассылку</h2>
-      <p class="main__newsletter-description">Только полезная информация и никакого спама,
+  <section class="main__subscribe">
+    <div class="main__subscribe-text">
+      <h2 class="main__subscribe-heading">Подпишитесь на рассылку</h2>
+      <p class="main__subscribe-description">Только полезная информация и никакого спама,<br>
         честное бойскаутское!</p>
-      <form class="main__newsletter-form" action="">
-        <input type="email" name="" class="main__newsletter-input" placeholder="Ваш e-mail">
-        <button class="main__newsletter-button">Подписаться</button>
+      <form class="main__subscribe-form" action="">
+        <input type="email" name="" class="main__subscribe-input" placeholder="Ваш e-mail">
+        <button class="main__subscribe-button">Подписаться</button>
       </form>
     </div>
   </section>
