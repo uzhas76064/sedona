@@ -8,107 +8,101 @@
 <body>
 
 <header class="header">
-  <a class="header__logo" href="index.html">
-    <img src="./images/logo.png" alt="Логотип Sedona">
+  <a class="header-logo" href="index.html">
+    <img class="logo-image" src="./images/logo.png" alt="Логотип Sedona">
   </a>
 
-  <nav class="header__navigation">
-    <ul class="header__navigation-menu">
-      <li class="navigation__item">
-        <a href="" class="navigation__link">Главная</a>
+  <nav class="header-nav">
+    <ul class="header-menu">
+      <li class="menu-item">
+        <a href="" class="menu-link">Главная</a>
       </li>
       <li class="navigation__item">
-        <a href="" class="navigation__link">О Седоне</a>
+        <a href="" class="menu-link">О Седоне</a>
       </li>
       <li class="navigation__item">
-        <a href="hotels.html" class="navigation__link">Гостиницы</a>
+        <a href="hotels.html" class="menu-link">Гостиницы</a>
       </li>
     </ul>
   </nav>
 
-  <div class="header__actions">
+  <div class="header-actions">
     <a class="search" href="">
       <span class="visually-hidden">Поиск</span>
-      <img src="./images/search.png" alt="Поиск" class="actions__search">
+      <img src="./images/search.png" alt="Поиск" class="search-icon">
     </a>
     <a class="favorite" href="">
       <span class="visually-hidden">Избранное</span>
-      <img src="./images/favorite.png" alt="Избранное" class="actions__favorite">
+      <img src="./images/favorite.png" alt="Избранное" class="favorite-icon">
     </a>
-    <button class="header__actions-button">Хочу сюда</button>
+    <button class="booking-button">Хочу сюда</button>
   </div>
 </header>
 
 <main class="main">
-  <section class="main__intro">
-    <img src="./images/welcome.png" class="main__intro-title" alt="Welcome">
-    <img src="./images/gorg.png" class="main__intro-subtitle" alt="gorgeous">
+  <section class="main-intro">
+    <img src="./images/welcome.png" class="intro-title" alt="Welcome">
+    <img src="./images/gorg.png" class="intro-subtitle" alt="gorgeous">
     <img src="./images/sedona.png" class="main__intro-heading" alt="Sedona">
   </section>
 
-  <section class="main__description">
-    <h2 class="main__description-header">Седона — небольшой городок в Аризоне,
+  <section class="main-description">
+    <h2 class="description-header">Седона — небольшой городок в Аризоне,
       заслуживающий большего!</h2>
-    <p class="main__description-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    <p class="description-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
   </section>
 
-  <section class="main__reasons">
-    <div class="main__reasons-item white blue-background">
-      <div class="main__reasons-item-info blue-background">
-        <h3 class="main__reasons-item-title">Настоящий городок</h3>
-        <span class="main__reasons-item-number">— №1 —</span>
-        <p class="main__reasons-item-description">Седона — не аттракцион для туристов, там течёт
+  <section class="main-reasons">
+    <ul class="reasons-list">
+      <li class="reasons-item">
+        <h3 class="reasons-item-title">Настоящий городок</h3>
+        <span class="reasons-item-number">— №1 —</span>
+        <p class="reasons-item-description">Седона — не аттракцион для туристов, там течёт
           своя жизнь</p>
-      </div>
-      <img src="./images/photo-1.png" alt="Деревяное здание с американским флагом на переднем фоне">
-    </div>
+        <img class="reasons-image" src="./images/photo-1.png" alt="Деревяное здание с американским флагом на переднем фоне">
+        <ul class="features-list">
+          <li class="features-item">
+            <!--          <img src="./images/house.png" alt="Жильё">-->
+            <h3 class="features-item-title">Жильё</h3>
+            <p class="features-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
 
-    <div class="features__item">
-      <div class="features__item-info">
-        <img src="./images/house.png" alt="Жильё">
-        <h3 class="features__item-title">Жильё</h3>
-        <p class="features__item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-      </div>
-      <div class="features__item-info">
-        <img src="./images/food.png" alt="Еда">
-        <h3 class="features__item-title">Еда</h3>
-        <p class="features__item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-      </div>
-      <div class="features__item-info">
-        <img src="./images/souvenirs.png" alt="Сувениры">
-        <h3 class="features__item-title">Сувениры</h3>
-        <p class="features__item-description">Не только китайского, но и настоящего местного производства!</p>
-      </div>
-    </div>
-  </section>
+          <li class="features-item">
+            <!--          <img src="./images/food.png" alt="Еда">-->
+            <h3 class="features-item-title">Еда</h3>
+            <p class="features-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
 
-  <section class="main__highlight">
-    <img src="./images/photo-2.png" alt="Пустынная местность с горами коричнево-красного оттенка">
-    <div class="main__highlight-description  blue-background white">
-      <h3 class="main__highlight-title">Там есть мост дьявола</h3>
-      <span class="main__highlight-number">— №2 —</span>
-      <p class="main__highlight-info">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-    </div>
-  </section>
+          <li class="features-item">
+            <!--          <img src="./images/souvenirs.png" alt="Сувениры">-->
+            <h3 class="features-item-title">Сувениры</h3>
+            <p class="features-item-description">Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </li>
 
-  <section class="main__reasons">
-    <div class="main__reasons-item">
-      <div class="main__reasons-item-info blue-background">
-        <h3 class="main__reasons-item-title">Небольшая площадь</h3>
-        <span class="main__reasons-item-number">— №3 —</span>
-        <p class="main__reasons-item-description">Все достопримечательности находятся очень близко</p>
-      </div>
-      <div class="main__reasons-item-info blue-background">
-        <h3 class="main__reasons-item-title">Красивая дорога</h3>
-        <span class="main__reasons-item-number">— №4 —</span>
-        <p class="main__reasons-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      </div>
-      <div class="main__reasons-item-info blue-background">
-        <h3 class="main__reasons-item-title">Мало туристов</h3>
-        <span class="main__reasons-item-number">— №5 —</span>
-        <p class="main__reasons-item-description">Большинство едет в Гранд Каньон и толпится там</p>
-      </div>
-    </div>
+      <li class="reasons-item">
+        <h3 class="reasons-item-title">Там есть мост дьявола</h3>
+        <span class="reasons-item-number">— №2 —</span>
+        <p class="reasons-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        <img class="reasons-image" src="./images/photo-2.png" alt="Пустынная местность с горами коричнево-красного оттенка">
+      </li>
+      <li class="reasons-item">
+        <h3 class="reasons-item-title">Небольшая площадь</h3>
+        <span class="reasons-item-number">— №3 —</span>
+        <p class="reasons-item-description">Все достопримечательности находятся очень близко</p>
+      </li>
+      <li class="reasons-item">
+        <h3 class="reasons-item-title">Красивая дорога</h3>
+        <span class="reasons-item-number">— №4 —</span>
+        <p class="reasons-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </li>
+      <li class="reasons-item">
+        <h3 class="reasons-item-title">Мало туристов</h3>
+        <span class="reasons-item-number">— №5 —</span>
+        <p class="reasons-item-description">Большинство едет в Гранд Каньон и толпится там</p>
+      </li>
+    </ul>
   </section>
 
   <section class="main__booking">
