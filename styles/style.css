@@ -122,7 +122,6 @@ main {
   margin-left: 20px;
   text-align: center;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
@@ -148,7 +147,6 @@ main {
   margin: 0 auto;
   text-align: center;
   font-size: 30px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
@@ -157,7 +155,6 @@ main {
 .description-text {
   text-align: center;
   font-size: 22px;
-  font-style: normal;
   font-weight: 400;
   line-height: 36px;
 }
@@ -175,7 +172,39 @@ main {
 }
 
 .reasons-item-large {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(3, 1fr);
   background-color: #83B3D3;
+}
+
+.reasons-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.reasons-info {
+  padding: 90px;
+}
+
+.reasons-item-small {
+  padding: 75px;
+}
+
+.features-item {
+  padding: 75px;
+}
+
+.reasons-image {
+  height: 0;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  grid-column: span 2;
+}
+
+.reasons-item:nth-child(2) .reasons-image {
+  order: -1;
 }
 
 .reasons-item:nth-child(odd):not(.reasons-item-large) {
@@ -201,7 +230,6 @@ main {
 .reasons-item-number {
   text-align: center;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
@@ -210,7 +238,6 @@ main {
 .reasons-item-description{
   text-align: center;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 21px;
 }
@@ -224,6 +251,9 @@ main {
 }
 
 .features-list {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background-color: white;
 }
 
@@ -235,7 +265,6 @@ main {
 .booking-heading {
   text-align: center;
   font-size: 30px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
@@ -244,7 +273,6 @@ main {
 .booking-description {
   text-align: center;
   font-size: 22px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
   width: 720px;
@@ -259,7 +287,6 @@ main {
 .newsletter-heading {
   text-align: center;
   font-size: 30px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
@@ -268,7 +295,6 @@ main {
 .newsletter-description {
   text-align: center;
   font-size: 22px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
 }
@@ -292,7 +318,6 @@ main {
 .newsletter-button {
   text-align: center;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
@@ -357,6 +382,7 @@ main {
 /*hotels.html*/
 
 .main__section {
+  text-align: initial;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -486,6 +512,7 @@ main {
 
 .main__hotel {
   padding: 20px;
+  text-align: initial;
 }
 
 .main__image, .main__hotel-info, .main__hotel-actions, .main__hotel-name {
