@@ -5,16 +5,18 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Document</title>
 </head>
 <body>
 <header class="header">
   <nav class="navigation">
-    <a href="index.html" class="logo">
-      <img src="./images/icons/logo.png" alt="Sedona-логотип" class="logo-img">
-    </a>
-
     <ul class="navigation-list">
+      <li class="navigation-item">
+        <a href="index.html" class="logo">
+          <img src="./images/icons/logo.png" alt="Sedona-логотип" class="logo-img">
+        </a>
+      </li>
       <li class="navigation-item">
         <a href="#" class="navigation-link">Главная</a>
       </li>
@@ -22,7 +24,7 @@
         <a href="#" class="navigation-link">О Седоне</a>
       </li>
       <li class="navigation-item">
-        <a href="" class="button-primary">Гостиницы</a>
+        <a href="" class="navigation-link">Гостиницы</a>
       </li>
     </ul>
 
@@ -34,7 +36,7 @@
         <a href="#" class="user-action">2</a>
       </li>
       <li class="actions-item">
-        <a href="#" class="user-action">Хочу сюда!</a>
+        <a href="#" class="button-primary">Хочу сюда!</a>
       </li>
     </ul>
   </nav>
@@ -43,6 +45,7 @@
 <main class="main-index">
   <section class="intro">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+    <img src="./images/welcome.svg" alt="" class="welcome-img">
   </section>
 
   <section class="reasons">
