@@ -224,7 +224,24 @@ fieldset {
   padding: 79px 75px;
 }
 
+.home-feature {
+  background: url("../images/icons/home.svg") no-repeat;
+  background-position: center 25%;
+}
+
+.food-feature {
+  background: url("../images/icons/food.svg") no-repeat;
+  background-position: center 25%;
+
+}
+
+.souvenirs-feature {
+  background: url("../images/icons/souvenirs.svg") no-repeat;
+  background-position: center 25%;
+}
+
 .features-item-title {
+  padding-top: 89px;
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 700;
