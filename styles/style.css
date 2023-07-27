@@ -94,6 +94,10 @@ span {
   display: block;
 }
 
+input {
+  border: none;
+}
+
 button {
   border: none;
 }
@@ -243,8 +247,77 @@ fieldset {
   margin: 0 auto 93px;
 }
 
+.subscribe {
+  color: white;
+  background: url("../images/background/background.png") no-repeat center;
+}
+
+.subscribe-heading {
+  padding-top: 94px;
+  margin-bottom: 29px;
+  color: inherit;
+}
+
+.subscribe-text {
+  margin-bottom: 46px;
+  font-size: 22px;
+  line-height: 118%;
+}
+
+.subscribe-form {
+  padding-bottom: 94px;
+}
+
+.subscribe-input {
+  font-size: 18px;
+  line-height: 125%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 22px;
+  padding-right: 19px;
+  height: 60px;
+  width: 559px;
+}
+
+.subscribe-button {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 130%;
+  text-transform: uppercase;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 200px;
+  height: 60px;
+  background-color: #83B3D3;
+}
+
 
 .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: baseline;
   flex-grow: 1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  padding-left: 72px;
+}
+
+.phone {
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: uppercase;
+  justify-self: center;
+}
+
+.developer {
+  justify-self: end;
+  margin-right: 72px;
 }
 
