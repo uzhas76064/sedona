@@ -138,6 +138,9 @@ fieldset {
 .welcome-img {
   padding: 51px 371px 82px 371px;
 }
+.reasons {
+  margin-bottom: 91px;
+}
 
 .reasons, .booking, .subscribe {
   text-align: center;
@@ -220,6 +223,26 @@ fieldset {
 .features-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
 }
+
+.booking-heading {
+  margin-bottom: 29px;
+}
+
+.booking-text {
+  margin-bottom: 56px;
+  padding: 0 240px;
+  font-size: 22px;
+  line-height: 118%;
+}
+
+.booking-button {
+  display: block;
+  font-size: 20px;
+  line-height: 125%;
+  max-width: 575px;
+  margin: 0 auto 93px;
+}
+
 
 .footer {
   flex-grow: 1;
