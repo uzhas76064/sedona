@@ -1,161 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="styles/style.css">
-  <title>HTML Academy: Sedona</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
 <body>
-
 <header class="header">
-  <a class="header-logo" href="index.html">
-    <img class="logo-image" src="./images/logo.png" alt="Логотип Sedona">
-  </a>
+  <nav class="navigation">
+    <a href="index.html" class="logo">
+      <img src="./images/icons/logo.png" alt="Sedona-логотип" class="logo-img">
+    </a>
 
-  <nav class="header-nav">
-    <ul class="header-menu">
-      <li class="menu-item">
-        <a href="" class="menu-link">Главная</a>
+    <ul class="navigation-list">
+      <li class="navigation-item">
+        <a href="#" class="navigation-link">Главная</a>
       </li>
-      <li class="navigation__item">
-        <a href="" class="menu-link">О Седоне</a>
+      <li class="navigation-item">
+        <a href="#" class="navigation-link">О Седоне</a>
       </li>
-      <li class="navigation__item">
-        <a href="hotels.html" class="menu-link">Гостиницы</a>
+      <li class="navigation-item">
+        <a href="" class="navigation-link">Гостиницы</a>
+      </li>
+    </ul>
+
+    <ul class="user-actions">
+      <li class="actions-item">
+        <a href="#" class="user-action">1</a>
+      </li>
+      <li class="actions-item">
+        <a href="#" class="user-action">2</a>
+      </li>
+      <li class="actions-item">
+        <a href="#" class="user-action"></a>
       </li>
     </ul>
   </nav>
-
-  <div class="header-actions">
-    <a class="search" href="">
-      <span class="visually-hidden">Поиск</span>
-      <img src="./images/search.png" alt="Поиск" class="search-icon">
-    </a>
-    <a class="favorite" href="">
-      <span class="visually-hidden">Избранное</span>
-      <img src="./images/favorite.png" alt="Избранное" class="favorite-icon">
-    </a>
-    <button class="booking-button button-small">Хочу сюда</button>
-  </div>
 </header>
-
-<main class="main">
-  <section class="main-intro">
-    <img src="./images/welcome.png" class="intro-title" alt="Welcome">
-    <img src="./images/gorg.png" class="intro-subtitle" alt="gorgeous">
-    <img src="./images/sedona.png" class="main__intro-heading" alt="Sedona">
-  </section>
-
-  <section class="main-description">
-    <h2 class="description-header">Седона — небольшой городок в Аризоне,<br>
-      заслуживающий большего!</h2>
-    <p class="description-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-  </section>
-
-  <section class="main-reasons">
-    <ul class="reasons-list">
-      <li class="reasons-item reasons-item-large">
-        <div class="reasons-info">
-          <h3 class="reasons-item-title white-text">Настоящий городок</h3>
-          <span class="reasons-item-number white-text">— №1 —</span>
-          <p class="reasons-item-description white-text">Седона — не аттракцион для туристов, там течёт
-            своя жизнь</p>
-        </div>
-        <img class="reasons-image" src="./images/photo-1.png" alt="Деревяное здание с американским флагом на переднем фоне">
-        <ul class="reasons-list features-list">
-          <li class="features-item">
-            <!--          <img src="./images/house.png" alt="Жильё">-->
-            <h3 class="features-item-title">Жильё</h3>
-            <p class="features-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-
-          <li class="features-item">
-            <!--          <img src="./images/food.png" alt="Еда">-->
-            <h3 class="features-item-title">Еда</h3>
-            <p class="features-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-
-          <li class="features-item">
-            <!--          <img src="./images/souvenirs.png" alt="Сувениры">-->
-            <h3 class="features-item-title">Сувениры</h3>
-            <p class="features-item-description">Не только китайского, но и настоящего местного производства!</p>
-          </li>
-        </ul>
-      </li>
-
-      <li class="reasons-item white-text reasons-item-large">
-        <div class="reasons-info">
-          <h3 class="reasons-item-title ">Там есть мост дьявола</h3>
-          <span class="reasons-item-number">— №2 —</span>
-          <p class="reasons-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-        </div>
-        <img class="reasons-image" src="./images/photo-2.png" alt="Пустынная местность с горами коричнево-красного оттенка">
-      </li>
-      <li class="reasons-item reasons-item-small">
-        <h3 class="reasons-item-title">Небольшая площадь</h3>
-        <span class="reasons-item-number">— №3 —</span>
-        <p class="reasons-item-description">Все достопримечательности находятся очень близко</p>
-      </li>
-      <li class="reasons-item  reasons-item-small">
-        <h3 class="reasons-item-title">Красивая дорога</h3>
-        <span class="reasons-item-number">— №4 —</span>
-        <p class="reasons-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      </li>
-      <li class="reasons-item reasons-item-small">
-        <h3 class="reasons-item-title">Мало туристов</h3>
-        <span class="reasons-item-number">— №5 —</span>
-        <p class="reasons-item-description">Большинство едет в Гранд Каньон и толпится там</p>
-      </li>
-    </ul>
-  </section>
-
-  <section class="booking">
-    <div class="booking-text">
-      <h2 class="booking-heading">Заинтересовались?</h2>
-      <p class="booking-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-        гостиниц в Седоне</p>
-      <button class="booking-button button-large white-text">ПОИСК ГОСТИНИЦЫ В Седоне</button>
-    </div>
-  </section>
-
-  <section class="newsletter">
-    <div class="newsletter-text white-text">
-      <h2 class="newsletter-heading">Подпишитесь на рассылку</h2>
-      <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form action="" class="newsletter-form">
-        <input type="text" placeholder="Ваш e-mail" class="newsletter-input">
-        <button class="newsletter-button white-text">Подписаться</button>
-      </form>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-    <ul class="social">
-      <li class="social-item">
-        <a href="index.html" class="social-link">
-          <span class="visually-hidden">Фейсбук</span>
-          <img src="./images/social-facebook.png" alt="Фейсбук" class="social-icon">
-        </a>
-      </li>
-      <li class="social-item">
-        <a href="index.html" class="social-link">
-          <span class="visually-hidden">Твиттер</span>
-          <img src="./images/social-twitter.png" alt="Твиттер" class="social-icon">
-        </a>
-      </li>
-      <li class="social-item">
-        <a href="index.html" class="social-link">
-          <span class="visually-hidden">Ютуб</span>
-          <img src="./images/social-youtube.png" alt="Ютуб" class="social-icon">
-        </a>
-      </li>
-    </ul>
-    <a href="tel:+78128121212" class="contact-info">+7 (812) 812-12-12</a>
-      <a class="developer-link" href="https://htmlacademy.ru">
-        <span class="visually-hidden">Разработано .htmlacademy.ru</span>
-        <img class="developer-image" src="images/logo_htmlacademy.png" alt="">
-      </a>
-</footer>
 </body>
 </html>
