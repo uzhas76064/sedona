@@ -124,6 +124,14 @@ fieldset {
   line-height: 26px;
 }
 
+.header-button {
+  margin-left: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 160px;
+  height: 37px;
+}
+
 .navigation-item {
   margin-right: 34px;
 }
