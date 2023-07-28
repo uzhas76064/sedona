@@ -469,3 +469,8 @@ fieldset {
   outline: 3px solid #68a2ca !important;
   outline-offset: -3px;
 }
+
+.subscribe-catalog {
+  color: black;
+  background: none;
+}
