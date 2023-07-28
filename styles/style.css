@@ -113,7 +113,9 @@ fieldset {
 
 .navigation {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: max-content 1fr max-content;
+  gap: 30px;
+  min-height: 65px;
   padding: 0 70px;
 }
 
@@ -122,6 +124,12 @@ fieldset {
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
+}
+
+.logo {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -10px;
 }
 
 .favorite {
@@ -165,8 +173,23 @@ fieldset {
   color: rgba(255, 255, 255, 0.30);
 }
 
-.navigation-item {
-  margin-right: 34px;
+.navigation-link {
+  display: block;
+  padding: 17px;
+}
+
+.navigation-item-active {
+  position: relative;
+}
+
+.navigation-item-active::after {
+  content: "";
+  position: absolute;
+  right: 17px;
+  left: 17px;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
 }
 
 .navigation-link:hover {
@@ -188,6 +211,7 @@ fieldset {
 }
 
 .intro {
+  min-height: 485px;
   background: url("../images/background/mask-background.svg") no-repeat 50% 100%,
     url("../images/background/main-background.png") no-repeat center;
   margin-bottom: 63px;
