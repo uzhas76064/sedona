@@ -498,3 +498,56 @@ fieldset {
   color: black;
   background: none;
 }
+
+
+/*catalog.html*/
+
+.main-header {
+  padding: 35px 72px 80px;
+  color: white;
+  background: url("../images/background/catalog-background.png") no-repeat;
+}
+
+.breadcrumbs-item > a {
+  color: white;
+}
+
+.filters-form {
+  display: grid;
+  grid-template-columns: 200px 200px 1fr 223px;
+  justify-content: space-between;
+  gap: 17px;
+}
+
+.control {
+  display: flex;
+}
+
+.filter-range {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.range-field {
+  display: grid;
+  grid-template-columns: 1fr 44px;
+}
+
+.range-title {
+  grid-column: -2/-1
+}
+
+.filter-group-price {
+  margin-left: 96px;
+}
+
+.filters-button {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+
+.min-range-input, .max-range-field {
+  width: 100%;
+  grid-row: 1/2;
+}
