@@ -559,9 +559,24 @@ fieldset {
   margin-right: 10px;
 }
 
+.breadcrumbs-link {
+  border-radius: 4px;
+}
+
 .breadcrumbs-item > a {
   font-size: 16px;
   color: white;
+}
+
+.breadcrumbs-item:hover .breadcrumbs-link {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus {
+  outline: 3px solid #83B3D3 !important;
+  outline-offset: -3px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .filters-form {
@@ -587,6 +602,7 @@ fieldset {
   position: relative;
   padding-left: 39px;
   display: flex;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -603,9 +619,15 @@ fieldset {
   background: rgba(255, 255, 255, 0.60);
 }
 
-.control:focus .control-mark {
+.input-control:focus-within .control-mark {
   outline: 3px solid #83B3D3 !important;
+  outline-offset: -3px;
 }
+
+.input-control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.60);
+}
+
 
 .input-control[type="checkbox"]:checked + .control-mark::before,
 .input-control[type="checkbox"]:checked + .control-mark::after {
@@ -696,6 +718,19 @@ fieldset {
   font: inherit;
   color: white;
   border: 2px solid white;
+}
+
+.range-field:hover input{
+  opacity: 0.6;
+}
+
+.range-field:focus-within input {
+  border: 2px solid white;
+  box-shadow: 0 0 0 3px #81B3D2;
+}
+
+.range-field:active {
+  background-color: #756257;
 }
 
 .min-range-field {
@@ -1026,6 +1061,23 @@ fieldset {
   appearance: none;
   font: inherit;
   background: url("../images/icons/arrow.svg") no-repeat right 20px center;
+  cursor: pointer;
+}
+
+.pagination-select:hover,
+.sort-method:hover {
+  border: 2px solid #83B3D3;
+}
+
+.pagination-select:focus,
+.sort-method:focus {
+  border: 2px solid #83B3D3;
+}
+
+.pagination-select:active,
+.sort-method:active {
+  border: 2px solid #E6E6E6;
+  opacity: 0.6;
 }
 
 .pagination-lead {
