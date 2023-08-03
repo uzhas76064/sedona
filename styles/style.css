@@ -584,7 +584,54 @@ fieldset {
 }
 
 .control {
+  position: relative;
+  padding-left: 39px;
   display: flex;
+}
+
+.control-mark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.control:hover .control-mark {
+  background: rgba(255, 255, 255, 0.60);
+}
+
+.control:focus .control-mark {
+  outline: 3px solid #83B3D3 !important;
+}
+
+.input-control[type="checkbox"]:checked + .control-mark::before,
+.input-control[type="checkbox"]:checked + .control-mark::after {
+  content: url("../images/icons/tick.svg");
+  position: absolute;
+  top: -2px;
+  left: 4px;
+}
+
+.input-control[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.input-control[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  content: url("../images/icons/radio.svg");
+  top: 0;
+  left: 0;
+}
+
+.min-range-field::-webkit-outer-spin-button,
+.min-range-field::-webkit-inner-spin-button,
+.max-range-field::-webkit-inner-spin-button,
+.max-range-field::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .filter-range {
@@ -639,6 +686,7 @@ fieldset {
 }
 
 .min-range-field, .max-range-field {
+  appearance: textfield;
   width: 100%;
   grid-row: 1/2;
   grid-column: 1/-1;
@@ -970,6 +1018,20 @@ fieldset {
   background-color: #F2F2F2;
   color: black;
 }
+
+.pagination-select {
+  border: 2px solid  #E6E6E6;
+  padding: 13px 133px 13px 17px;
+  border-radius: 4px;
+  appearance: none;
+  font: inherit;
+  background: url("../images/icons/arrow.svg") no-repeat right 20px center;
+}
+
+.pagination-lead {
+  padding-right: 50px;
+}
+
 
 .catalog-subscribe-input {
   background-color: #F2F2F2;
