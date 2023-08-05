@@ -262,7 +262,7 @@ fieldset {
   min-height: 485px;
   background-position: 50% calc(50% - 16px), 50% 100%, 50% 50%;
   background-size: auto auto, 100% auto, cover;
-  background-image: url(../images/welcome.svg),
+  background-image: url(../images/background/welcome.svg),
                 url(../images/background/mask-background.svg),
                 url(../images/background/main-background.png);
   background-repeat: no-repeat;
