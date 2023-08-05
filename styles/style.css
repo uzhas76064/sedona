@@ -329,19 +329,16 @@ fieldset {
 }
 
 .home-feature {
-  background: url("../images/icons/home.svg") no-repeat;
-  background-position: center 25%;
+  background: url("../images/icons/home.svg") no-repeat center 25%;
 }
 
 .food-feature {
-  background: url("../images/icons/food.svg") no-repeat;
-  background-position: center 25%;
+  background: url("../images/icons/food.svg") no-repeat center 25%;
 
 }
 
 .souvenirs-feature {
-  background: url("../images/icons/souvenirs.svg") no-repeat;
-  background-position: center 25%;
+  background: url("../images/icons/souvenirs.svg") no-repeat center 25%;
 }
 
 .features-item-title {
@@ -427,21 +424,24 @@ fieldset {
   font-weight: 700;
   line-height: 130%;
   text-transform: uppercase;
-  border-radius: 0 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
   width: 200px;
   height: 60px;
   background-color: #83B3D3;
 }
 
-.subscribe-button:hover {
+.subscribe-button:hover,
+.search-form-button:hover {
   background-color: #68A2CA;
 }
 
-.subscribe-button:focus {
+.subscribe-button:focus,
+.search-form-button:focus {
   border: 3px solid #756257;
 }
 
-.subscribe-button:active {
+.subscribe-button:active,
+.search-form-button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -822,8 +822,7 @@ fieldset {
   font: inherit;
   font-size: 18px;
   padding: 12px 19px;
-  background: url("../images/icons/arrow.svg") no-repeat;
-  background-position: right 20px center;
+  background: url("../images/icons/arrow.svg") no-repeat right 20px center;
   border: 2px solid #E6E6E6;
   appearance: none;
 }
@@ -1112,8 +1111,7 @@ fieldset {
   grid-template-columns: 1fr min-content;
   row-gap: 54px;
   width: 715px;
-  padding: 70px;
-  padding-top: 54px;
+  padding: 54px 70px 70px;
 
   background-color: #ffffff;
   border-radius: 30px;
@@ -1303,6 +1301,10 @@ fieldset {
   border-radius: 50%;
 }
 
+.field-info:hover {
+  background-color: #68A2CA;
+}
+
 .field-title {
   align-self: center;
 }
@@ -1322,24 +1324,31 @@ fieldset {
   justify-content: flex-end;
 }
 
-.field-message {
-  grid-column: 2/-1;
+.field-info-text {
+  display: none;
 }
 
-.field-info-text {
+.field-info:hover .field-info-text {
+  display: block;
   position: absolute;
   z-index: 1;
   color: white;
   width: 256px;
   border-radius: 10px;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 20px;;
   top: calc(100% + 15px);
   left: calc(50% - 128px);
   padding: 15px 18px 18px 22px;
   background-color: #333333;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
 }
+
+
+.field-message {
+  grid-column: 2/-1;
+}
+
 
 .field-info-text::before {
   content: "";

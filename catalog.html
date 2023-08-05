@@ -310,7 +310,7 @@
         </ul>
         <label class="pagination-label">
           <span class="pagination-lead">Гостиниц на странице: </span>
-          <select name="" class="pagination-select">
+          <select name="pagination-select" class="pagination-select">
             <option value="4" class="pagination-option">4</option>
             <option value="5" class="pagination-option">5</option>
             <option value="10" class="pagination-option">10</option>
@@ -326,7 +326,8 @@
       честное бойскаутское!</p>
     <form action="" class="subscribe-form">
       <h3 class="visually-hidden">Форма подписки на рассылку</h3>
-      <input class="subscribe-input catalog-subscribe-input" type="email" name="email" placeholder="Ваш e-mail">
+      <label for="email" class="visually-hidden">Подписаться на рассылку</label>
+      <input class="subscribe-input catalog-subscribe-input" type="email" name="email" id="email" placeholder="Ваш e-mail">
       <button class="subscribe-button">Подписаться</button>
     </form>
   </section>
