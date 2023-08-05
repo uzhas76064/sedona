@@ -327,7 +327,7 @@
     <form action="" class="subscribe-form">
       <h3 class="visually-hidden">Форма подписки на рассылку</h3>
       <label for="email" class="visually-hidden">Подписаться на рассылку</label>
-      <input class="subscribe-input catalog-subscribe-input" type="email" name="email" id="email" placeholder="Ваш e-mail">
+      <input class="subscribe-input catalog-subscribe-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
       <button class="subscribe-button">Подписаться</button>
     </form>
   </section>
@@ -412,13 +412,13 @@
     <form class="modal-content search-form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="search-form-date field field-search">
         <label class="field-title" for="date-in">Дата заезда:</label>
-        <input class="field-input" type="text" name="date-in" id="date-in" placeholder="Укажите дату" value="27 апреля 2020">
+        <input class="field-input" type="text" name="date-in" id="date-in" placeholder="Укажите дату" value="27 апреля 2020" required>
         <span class="field-message field-message-error">Мы не можем отправить вас в прошлое.</span>
       </div>
 
       <div class="search-form-date field field-search">
         <label class="field-title" for="date-out">Дата заезда:</label>
-        <input class="field-input" type="text" name="date-out" id="date-out" placeholder="Укажите дату" value="1 сентября 2021">
+        <input class="field-input" type="text" name="date-out" id="date-out" placeholder="Укажите дату" value="1 сентября 2021" required>
         <span class="field-message">На эти даты есть свободные номера. Пока есть.</span>
       </div>
 
