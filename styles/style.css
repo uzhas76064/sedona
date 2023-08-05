@@ -240,7 +240,7 @@ fieldset {
   position: absolute;
   right: 17px;
   left: 17px;
-  bottom: 0;
+  bottom: -5px;
   height: 2px;
   background-color: #756257;
 }
